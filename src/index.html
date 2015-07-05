@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html ng-app="notesApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>MEAN (Mongodb, Exp</title>
+
+	<link rel="stylesheet" href="/css/application.css">
+
+	<script src="/js/application.js"></script>
+
+</head>
+<body ng-controller="MainController">
+	<div class="container">
+
+		<div class="text-center">
+			<h1>Angular Notes App</h1>
+			<p>This simple application uses MongoDB, Node.js, Express, Grunt, Bower and Angular.js</p>
+		</div>
+
+		<table class="table table-condensed table-bordered" ng-if="notes.length > 0">
+			<thead>
+			<tr>
+				<th>Note</th>
+				<th>Options</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="note in notes">
+				<td>{{ note.text }} </td>
+				<td><button ng-click="deleteNote(note._id)">Remove</button></td>
+			</tr>
+			</tbody>
+		</table>
+
+		<div class="row">
+			<form>
+			<div class="col-xs-8">
+				<input type="text" class="form-control input-lg text-center" placeholder="Your note.." ng-model="formData.text">
+			</div>
+			<div class="col-xs-4">
+				<button type="submit" class="btn btn-primary btn-lg" ng-click="createNote()">Create Note</button>
+			</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

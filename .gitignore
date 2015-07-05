@@ -1,0 +1,7 @@
+npm-debug.log
+node_modules
+.idea
+public/css/application.css
+public/js/application.jd
+public/index.html
+
