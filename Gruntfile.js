@@ -8,8 +8,8 @@ module.exports = function(grunt) {
                 options : {
                 },
                 files: {
-                    'src/js/lib' : 'bower_components/angular/angular.min.js',
-                    'src/css' : 'bower_components/bootstrap/dist/css/bootstrap.min.css'
+                    'src/js/lib' : 'angular/angular.min.js',
+                    'src/css' : 'bootstrap/dist/css/bootstrap.min.css'
                 }
             }
         },
@@ -126,5 +126,3 @@ module.exports = function(grunt) {
     grunt.registerTask('serve:dev', [ 'bowercopy:dependencies', 'concat:css', 'concat:js', 'uglify', 'copy:src', 'express:dev', 'notify:server', 'watch' ]);
     grunt.registerTask('serve:prod', [ 'bowercopy:dependencies', 'concat:css', 'concat:js', 'uglify', 'copy:src', 'htmlmin:index', 'express:prod' ]);
 };
-
-

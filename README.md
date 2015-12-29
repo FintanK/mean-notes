@@ -7,6 +7,8 @@ A simple Angular application that allows the editing of notes. It uses a MongoDB
 - MongoDB (just install it locally)
 - Node.js and NPM
 
+Note: Ensure the MongoDB service is running.
+
 ## Installation
 
 1. Clone the repository
@@ -20,7 +22,7 @@ A simple Angular application that allows the editing of notes. It uses a MongoDB
 
 > grunt serve:dev
 
-5. The application should now be available on http://localhost:8080
+5. The application should now be available on http://localhost:8081
 
 ![MongoDB](http://www.aschua.de/wordpress/wp-content/uploads/2014/06/mongodb.png)
 ![Grunt](http://jackandrewread.com/img/skills/grunt.png)
