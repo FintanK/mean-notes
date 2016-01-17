@@ -16,6 +16,8 @@ Note: Ensure the MongoDB service is running.
 
 > npm install
 
+> bower install
+
 3. Edit /app/config/database.js to point to your Mongo database
 
 4. Build and run the express web server
